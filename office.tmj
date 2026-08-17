@@ -29,7 +29,7 @@
          "name":"start",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":31,
          "x":0,
          "y":0
@@ -61,7 +61,7 @@
          "name":"collisions",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":31,
          "x":0,
          "y":0
@@ -136,7 +136,7 @@
          "name":"floor",
          "opacity":1,
          "type":"group",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -210,7 +210,7 @@
          "name":"walls",
          "opacity":1,
          "type":"group",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -316,7 +316,7 @@
          "name":"furniture",
          "opacity":1,
          "type":"group",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -471,7 +471,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -505,7 +505,7 @@
                  "name":"above1",
                  "opacity":1,
                  "type":"tilelayer",
-                 "visible":false,
+                 "visible":true,
                  "width":31,
                  "x":0,
                  "y":0
@@ -537,7 +537,7 @@
                  "name":"above2",
                  "opacity":1,
                  "type":"tilelayer",
-                 "visible":false,
+                 "visible":true,
                  "width":31,
                  "x":0,
                  "y":0
@@ -577,7 +577,7 @@
                 {
                  "draworder":"topdown",
                  "id":65,
-                 "name":"roofLayer",
+                 "name":"roofZone",
                  "objects":[
                         {
                          "height":0,
