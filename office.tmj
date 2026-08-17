@@ -677,7 +677,7 @@
         {
          "name":"script1",
          "type":"string",
-         "value":"scrpit.js"
+         "value":"script.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.12.2",
