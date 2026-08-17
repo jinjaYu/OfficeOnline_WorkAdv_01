@@ -1,4 +1,6 @@
 name: Build and deploy
+- name: Show npm logs
+  run: cat /home/runner/.npm/_logs/*.log
 
 on:
   push:
