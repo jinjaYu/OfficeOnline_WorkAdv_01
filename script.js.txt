@@ -1,7 +1,7 @@
 WA.room.onEnterZone("roofZone", () => {
-  WA.room.setLayerOpacity("roofLayer", 0.5);
+  WA.room.setLayerOpacity("roof", 0.5);
 });
 
 WA.room.onLeaveZone("roofZone", () => {
-  WA.room.setLayerOpacity("roofLayer", 1);
+  WA.room.setLayerOpacity("roof", 1);
 });
