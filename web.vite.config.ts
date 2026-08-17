@@ -73,4 +73,7 @@ export default defineConfig({
     esbuild: {
         include: /\.tsx?$/,
     },
+	allowedHosts: [
+	  'today-is-0123456789.loca.lt'
+    ]
 });
