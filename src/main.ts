@@ -21,7 +21,7 @@ WA.onInit().then(() => {
 	
 
 	  // 2. 監聽進入區域
-	  WA.room.area.onEnter('roofZone').subscribe((user) => {
+	  WA.room.area.onEnter('roofZone').subscribe(() => {
 		
 		// 將定位物件改為 'roofZone' 確保彈出窗能正常顯示
 		WA.ui.openPopup("roofZone", "It's in zone", []); 
@@ -31,7 +31,7 @@ WA.onInit().then(() => {
 	  });
 
 	  // 3. 監聽離開區域
-	  WA.room.area.onLeave('roofZone').subscribe((user) => {
+	  WA.room.area.onLeave('roofZone').subscribe(() => {
 		
 		WA.ui.openPopup("roofZone", "It's out zone", []);
 		
