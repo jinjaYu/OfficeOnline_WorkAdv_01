@@ -5,7 +5,6 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 console.info('Script started successfully');
 
 let currentPopup: any = undefined;
-let cp: any = undefined;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
@@ -22,13 +21,13 @@ WA.onInit().then(() => {
 	
 	  bootstrapExtra().then(() => {
 		WA.room.onEnterZone("roofZone", () => {
-          cp = WA.ui.openPopup("cp", "It's  in zone " + time, []);
+          WA.ui.openPopup("cp", "It's  in zone " , []);
 		  console.log("進入 roofZone");
 		  WA.room.showLayer("roof");
 		});
 
 		WA.room.onLeaveZone("roofZone", () => {
-          cp = WA.ui.openPopup("cp", "It's  out zone " + time, []);
+          WA.ui.openPopup("cp", "It's  out zone " , []);
 		  console.log("out roofZone");
 		  WA.room.hideLayer("roof");
 		});
