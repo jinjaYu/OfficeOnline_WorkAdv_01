@@ -591,18 +591,6 @@
                          "width":115.333333333333,
                          "x":161.333333333333,
                          "y":310.666666666667
-                        }, 
-                        {
-                         "height":0,
-                         "id":27,
-                         "name":"",
-                         "opacity":1,
-                         "rotation":0,
-                         "type":"",
-                         "visible":true,
-                         "width":0,
-                         "x":392.666666666667,
-                         "y":292.666666666667
                         }],
                  "opacity":1,
                  "type":"objectgroup",
@@ -618,7 +606,7 @@
          "y":0
         }],
  "nextlayerid":66,
- "nextobjectid":28,
+ "nextobjectid":32,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -817,8 +805,98 @@
          "tilewidth":32
         }, 
         {
+         "columns":18,
          "firstgid":2956,
-         "source":"tilesets\/Overworld-1.png.tsx"
+         "image":"..\/..\/..\/Downloads\/Overworld-1.png.png",
+         "imageheight":260,
+         "imagewidth":288,
+         "margin":0,
+         "name":"Overworld-1.png",
+         "spacing":0,
+         "tilecount":288,
+         "tileheight":16,
+         "tiles":[
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":6
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":12
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":6
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":18
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":19
+                        }],
+                 "id":0
+                }, 
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":1
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":7
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":13
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":7
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":8
+                        }],
+                 "id":95
+                }, 
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":0
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":6
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":12
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":6
+                        }],
+                 "id":123
+                }],
+         "tilewidth":16
         }, 
         {
          "firstgid":3244,
