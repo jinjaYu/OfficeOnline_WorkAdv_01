@@ -20,17 +20,26 @@ WA.onInit().then(() => {
     WA.room.area.onLeave('clock').subscribe(closePopup)
 	
 
-	WA.room.area.onEnter('roofZone').subscribe(() => {
-	  WA.ui.openPopup("cp", "It's  in zone " , []);
-	  console.log("進入 roofZone");
-	  WA.room.showLayer('roof');
-	})
+	  // 2. 監聽進入區域
+	  WA.room.area.onEnter('roofZone').subscribe((user) => {
+		console.log(`${user.name} 進入 roofZone`);
+		
+		// 將定位物件改為 'roofZone' 確保彈出窗能正常顯示
+		WA.ui.openPopup("roofZone", "It's in zone", []); 
+		
+		// 顯示圖層
+		WA.room.showLayer('roof');
+	  });
 
-	WA.room.area.onLeave('roofZone').subscribe(() => {
-	  WA.ui.openPopup("cp", "It's  out zone " , []);
-	  console.log("out roofZone");
-	  WA.room.hideLayer('roof');
-	})
+	  // 3. 監聽離開區域
+	  WA.room.area.onLeave('roofZone').subscribe((user) => {
+		console.log(`${user.name} 離開 roofZone`);
+		
+		WA.ui.openPopup("roofZone", "It's out zone", []);
+		
+		// 隱藏圖層
+		WA.room.hideLayer('roof');
+	  });
 
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
