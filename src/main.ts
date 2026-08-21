@@ -44,6 +44,12 @@ WA.onInit().then(() => {
 		// 隱藏圖層
 		WA.room.hideLayer('roof');
 	  });
+	  
+	  WA.room.area.onEnter('point1').subscribe(() => {
+		
+		// 顯示圖層
+		WA.room.showLayer('point2');
+	  });
 
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
