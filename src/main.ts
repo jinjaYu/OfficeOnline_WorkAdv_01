@@ -18,6 +18,16 @@ WA.onInit().then(() => {
     })
 
     WA.room.area.onLeave('clock').subscribe(closePopup)
+	
+	WA.room.onEnterZone("roofZone", () => {
+	  console.log("進入 roofZone");
+	  WA.room.setLayerOpacity("roof", 0.5);
+	});
+
+	WA.room.onLeaveZone("roofZone", () => {
+	  console.log("out roofZone");
+	  WA.room.setLayerOpacity("roof", 1);
+	});
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
