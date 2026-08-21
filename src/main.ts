@@ -24,13 +24,13 @@ WA.onInit().then(() => {
 	  WA.ui.openPopup("cp", "It's  in zone " , []);
 	  console.log("進入 roofZone");
 	  WA.room.showLayer("roof");
-	});
+	})
 
 	WA.room.area.onLeave("roofZone").subscribe(() => {
 	  WA.ui.openPopup("cp", "It's  out zone " , []);
 	  console.log("out roofZone");
 	  WA.room.hideLayer("roof");
-	});
+	})
 
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
