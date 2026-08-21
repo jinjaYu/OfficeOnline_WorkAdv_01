@@ -48,7 +48,7 @@ WA.onInit().then(() => {
 	  WA.room.area.onEnter('point1').subscribe(() => {
 		
 		// 顯示圖層
-		WA.room.showLayer('point2');
+		WA.room.hideLayer('point2');
 	  });
 
 
