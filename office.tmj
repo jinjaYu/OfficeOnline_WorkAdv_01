@@ -521,6 +521,35 @@
                  "width":0,
                  "x":220.666666666667,
                  "y":285.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":37,
+                 "name":"clock2",
+                 "opacity":1,
+                 "polygon":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-21.3333333333333,
+                         "y":75.3333333333333
+                        }, 
+                        {
+                         "x":33.3333333333333,
+                         "y":106.666666666667
+                        }, 
+                        {
+                         "x":76.6666666666667,
+                         "y":60.6666666666666
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":0,
+                 "x":87.3333333333333,
+                 "y":262
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -635,7 +664,7 @@
          "y":0
         }],
  "nextlayerid":66,
- "nextobjectid":37,
+ "nextobjectid":38,
  "orientation":"orthogonal",
  "properties":[
         {
