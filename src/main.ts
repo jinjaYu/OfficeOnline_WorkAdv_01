@@ -22,12 +22,12 @@ WA.onInit().then(() => {
 	  bootstrapExtra().then((extra) => {
 		WA.room.onEnterZone("roofZone", () => {
 		  console.log("進入 roofZone");
-		  extra.layers.setLayerOpacity("roof", 0.5);
+		  extra.room.showLayer("roof");
 		});
 
 		WA.room.onLeaveZone("roofZone", () => {
 		  console.log("out roofZone");
-		  extra.layers.setLayerOpacity("roof", 1);
+		  extra.room.hideLayer("roof");
 		});
 	  });
 
