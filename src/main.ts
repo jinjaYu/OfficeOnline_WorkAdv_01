@@ -22,7 +22,6 @@ WA.onInit().then(() => {
 
 	  // 2. 監聽進入區域
 	  WA.room.area.onEnter('roofZone').subscribe((user) => {
-		console.log(`${user.name} 進入 roofZone`);
 		
 		// 將定位物件改為 'roofZone' 確保彈出窗能正常顯示
 		WA.ui.openPopup("roofZone", "It's in zone", []); 
@@ -33,7 +32,6 @@ WA.onInit().then(() => {
 
 	  // 3. 監聽離開區域
 	  WA.room.area.onLeave('roofZone').subscribe((user) => {
-		console.log(`${user.name} 離開 roofZone`);
 		
 		WA.ui.openPopup("roofZone", "It's out zone", []);
 		
