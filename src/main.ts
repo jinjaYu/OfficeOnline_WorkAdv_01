@@ -19,7 +19,7 @@ WA.onInit().then(() => {
 
     WA.room.area.onLeave('clock').subscribe(closePopup)
 	
-	  bootstrapExtra().then((extra) => {
+	  bootstrapExtra().then(() => {
 		WA.room.onEnterZone("roofZone", () => {
 		  console.log("進入 roofZone");
 		  WA.room.showLayer("roof");
