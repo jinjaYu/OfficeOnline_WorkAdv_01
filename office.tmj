@@ -545,11 +545,35 @@
                          "y":60.6666666666666
                         }],
                  "rotation":0,
-                 "type":"area",
+                 "type":"",
                  "visible":true,
                  "width":0,
                  "x":87.3333333333333,
                  "y":262
+                }, 
+                {
+                 "height":52.6666666666666,
+                 "id":40,
+                 "name":"rz11",
+                 "opacity":1,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":110,
+                 "x":107.333333333333,
+                 "y":406
+                }, 
+                {
+                 "height":0,
+                 "id":42,
+                 "name":"",
+                 "opacity":1,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":278.666666666667,
+                 "y":-45.3333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -664,7 +688,7 @@
          "y":0
         }],
  "nextlayerid":66,
- "nextobjectid":38,
+ "nextobjectid":43,
  "orientation":"orthogonal",
  "properties":[
         {

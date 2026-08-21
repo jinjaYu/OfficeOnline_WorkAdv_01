@@ -14,13 +14,13 @@ WA.onInit().then(() => {
     WA.room.area.onEnter('clock').subscribe(() => {
         const today = new Date();
         const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("clockPopup2", "Itaaaa's " + time, []);
+        currentPopup = WA.ui.openPopup("clockPopup", "Itaaaa's " + time, []);
     })
 	
 	WA.room.area.onEnter('clock2').subscribe(() => {
 		const today = new Date();
 		const time = today.getHours() + ":" + today.getMinutes();
-		currentPopup = WA.ui.openPopup("clockPopup", "It's " + time, []);
+		currentPopup = WA.ui.openPopup("rz11", "It's " + time, []);
     })
 
     WA.room.area.onLeave('clock').subscribe(closePopup)
@@ -30,7 +30,7 @@ WA.onInit().then(() => {
 	  WA.room.area.onEnter('roofZone').subscribe(() => {
 		
 		// 將定位物件改為 'roofZone' 確保彈出窗能正常顯示
-		WA.ui.openPopup("roofZone", "It's in zone", []); 
+		WA.ui.openPopup("rz11", "It's in zone", []); 
 		
 		// 顯示圖層
 		WA.room.showLayer('roof');
@@ -39,7 +39,7 @@ WA.onInit().then(() => {
 	  // 3. 監聽離開區域
 	  WA.room.area.onLeave('roofZone').subscribe(() => {
 		
-		WA.ui.openPopup("roofZone", "It's out zone", []);
+		WA.ui.openPopup("rz11", "It's out zone", []);
 		
 		// 隱藏圖層
 		WA.room.hideLayer('roof');
