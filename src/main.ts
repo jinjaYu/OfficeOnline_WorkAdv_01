@@ -33,7 +33,7 @@ WA.onInit().then(() => {
 		//WA.ui.openPopup("rz11", "It's in zone", []); 
 		
 		// 顯示圖層
-		WA.room.showLayer('roof');
+		WA.room.showLayer('above/roof');
 	  });
 
 	  // 3. 監聽離開區域
@@ -42,7 +42,7 @@ WA.onInit().then(() => {
 		//WA.ui.openPopup("rz11", "It's out zone", []);
 		
 		// 隱藏圖層
-		WA.room.hideLayer('roof');
+		WA.room.hideLayer('above/roof');
 	  });
 	  
 	  WA.room.area.onEnter('point1').subscribe(() => {
