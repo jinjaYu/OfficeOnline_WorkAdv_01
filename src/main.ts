@@ -26,24 +26,24 @@ WA.onInit().then(() => {
     WA.room.area.onLeave('clock').subscribe(closePopup)
 	
 
-	 // // 2. 監聽進入區域
-	 // WA.room.area.onEnter('roofZone').subscribe(() => {
+	  // 2. 監聽進入區域
+	  WA.room.area.onEnter('roofZone').subscribe(() => {
 		
-		//// 將定位物件改為 'roofZone' 確保彈出窗能正常顯示
+		// 將定位物件改為 'roofZone' 確保彈出窗能正常顯示
 		//WA.ui.openPopup("rz11", "It's in zone", []); 
 		
-		//// 顯示圖層
-		//WA.room.showLayer('roof');
-	 // });
+		// 顯示圖層
+		WA.room.showLayer('roof');
+	  });
 
-	 // // 3. 監聽離開區域
-	 // WA.room.area.onLeave('roofZone').subscribe(() => {
+	  // 3. 監聽離開區域
+	  WA.room.area.onLeave('roofZone').subscribe(() => {
 		
 		//WA.ui.openPopup("rz11", "It's out zone", []);
 		
-		//// 隱藏圖層
-		//WA.room.hideLayer('roof');
-	 // });
+		// 隱藏圖層
+		WA.room.hideLayer('roof');
+	  });
 	  
 	  WA.room.area.onEnter('point1').subscribe(() => {
 		
