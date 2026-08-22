@@ -53,6 +53,24 @@ WA.onInit().then(() => {
 		WA.room.hideLayer('point2');
 	  });
 
+    WA.ui.openPopup("point1", "歡迎來到無處高塔！在此展示光輝給您！", [
+        {
+            label: "接受恩惠！",          // 按鈕文字
+            className: "primary",      // 按鈕樣式 (可選: 'primary', 'success', 'warning', 'danger', 'normal')
+            callback: (popup) => {     // 點擊後的事件
+                WA.room.showLayer('floor/magicwords'); // 執行你的邏輯
+                popup.close();         // 關閉視窗
+            }
+        },
+        {
+            label: "已收服。",
+            className: "normal",
+            callback: (popup) => {
+                popup.close();         // 僅關閉視窗
+            }
+        }
+    ]);
+
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
