@@ -63,13 +63,15 @@ WA.onInit().then(() => {
                 callback: (popup) => {     // 點擊後的事件
                     WA.room.showLayer('floor/magicwords'); // 執行你的邏輯
                     popup.close();         // 關閉視窗
+                    WA.controls.restorePlayerControls(); 
                 }
             },
             {
-                label: "已收服。",
+                label: "不用了。",
                 className: "normal",
                 callback: (popup) => {
                     popup.close();         // 僅關閉視窗
+                    WA.controls.restorePlayerControls(); 
                 }
             }
         ]);
