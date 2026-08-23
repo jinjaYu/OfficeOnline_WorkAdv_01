@@ -11,6 +11,7 @@ WA.onInit().then(() => {
     console.info('Scripting API ready');
     console.info('Player tags: ', WA.player.tags)
     WA.room.hideLayer('floor/magicwords'); // 執行你的邏輯
+    WA.room.hideLayer('floor/floor3');
 
 
     WA.room.area.onEnter('clock').subscribe(() => {
@@ -36,7 +37,7 @@ WA.onInit().then(() => {
 		
 		// 顯示圖層
 		  WA.room.showLayer('above/roof2');
-		  WA.room.hideLayer('above/roof');
+		  WA.room.showLayer('floor/floor3');
 	  });
 
 	  // 3. 監聽離開區域
@@ -45,7 +46,7 @@ WA.onInit().then(() => {
 		//WA.ui.openPopup("rz11", "It's out zone", []);
 		
 		// 隱藏圖層
-		  WA.room.showLayer('above/roof');
+		  WA.room.hideLayer('floor/floor3');
 		  WA.room.hideLayer('above/roof2');
 	  });
 	  
