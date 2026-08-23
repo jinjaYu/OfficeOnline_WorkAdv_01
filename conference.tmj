@@ -47,7 +47,7 @@
          "name":"collisions",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":24,
          "x":0,
          "y":0
@@ -276,12 +276,12 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"{{{ https:\/\/www.google.com\/search?q=workadventure%E4%BA%8B%E4%BB%B6%E8%A7%B8%E7%99%BC&sca_esv=9ce9585bc280c1d5&biw=1280&bih=598&sxsrf=APpeQnuaYc_MotdBEWAnoHQ-oZ8ceIFWmg%3A1787325746021&ei=Mm2IarZw0quG9w_e_uWYCQ&ved=0ahUKEwi20cGhg7KWAxXSleEIHV5_GZMQ4dUDCBA&uact=5&oq=workadventure%E4%BA%8B%E4%BB%B6%E8%A7%B8%E7%99%BC&gs_lp=Egxnd3Mtd2l6LXNlcnAiGXdvcmthZHZlbnR1cmXkuovku7bop7jnmbwyCBAAGIAEGKIEMgUQABjvBTIFEAAY7wVIp3RQjA9YrW1wAngBkAEAmAFZoAGkDqoBAjI2uAEDyAEA-AEBmAIcoAKgEKgCCsICBxAjGOoCGCfCAgoQIxjwBRjqAhgnwgIQECMYogcYngYY8AUY6gIYJ8ICDRAjGPAFGJ4GGKIHGCfCAgQQIxgnwgILEAAYgAQYsQMYgwHCAggQABiABBixA8ICDhAuGIAEGLEDGMcBGNEDwgIEEAAYA8ICERAuGIAEGLEDGIMBGMcBGNEDwgIKEC4YgAQYigUYQ8ICEBAuGIAEGIoFGEMYsQMYgwHCAgUQLhiABMICChAAGIAEGIoFGEPCAgUQABiABMICDRAjGKIHGJ4GGPAFGCfCAggQABiABBjLAcICEBAuGIAEGMsBGMcBGNEDGArCAgkQABiABBgKGAvCAgoQABiABBjLARgKwgIQECMYogcYngYY8AUYsAIYJ8ICBxAjGLACGCfCAgcQABiABBgNwgIGEAAYHhgNwgIIEAAYiQUYogSYAwvxBesXSJJ9dqKmkgcCMjigB5-xAbIHAjI2uAeOEMIHCjAuNi4xNS42LjHIB7kBgAgB&sclient=gws-wiz-serp }}}"
+                         "value":"{{{ https:\/\/dictionary.cambridge.org\/zht\/%E8%A9%9E%E5%85%B8\/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94\/ceiling }}}"
                         }, 
                         {
                          "name":"openWebsiteTrigger",
                          "type":"string",
-                         "value":"onaction"
+                         "value":"onenter"
                         }, 
                         {
                          "name":"openWebsiteTriggerMessage",
