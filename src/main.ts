@@ -48,7 +48,19 @@ WA.onInit().then(() => {
 		// 隱藏圖層
 		  WA.room.hideLayer('floor/floor3');
 		  WA.room.hideLayer('above/roof2');
-	  });
+      });
+
+		WA.room.area.onEnter('attic').subscribe(() => {
+			// 顯示圖層
+            WA.room.showLayer('furniture/furniture3');
+		});
+
+		// 3. 監聽離開區域
+		WA.room.area.onLeave('roofZone').subscribe(() => {
+			// 隱藏圖層
+            WA.room.hideLayer('furniture/furniture3');
+		});
+
 	  
 	  WA.room.area.onEnter('point1').subscribe(() => {
 		
