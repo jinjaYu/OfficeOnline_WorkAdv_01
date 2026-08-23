@@ -274,7 +274,7 @@
                          "value":true
                         }, 
                         {
-                         "name":"openWebsite",
+                         "name":"openTab",
                          "type":"string",
                          "value":"https:\/\/dictionary.cambridge.org\/"
                         }, 
