@@ -39,7 +39,7 @@
          "name":"start",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":35,
          "x":0,
          "y":0
@@ -398,7 +398,7 @@
                  "name":"furniture1",
                  "opacity":1,
                  "type":"tilelayer",
-                 "visible":false,
+                 "visible":true,
                  "width":35,
                  "x":0,
                  "y":0
@@ -482,7 +482,7 @@
                  "name":"furniture3",
                  "opacity":0.56,
                  "type":"tilelayer",
-                 "visible":false,
+                 "visible":true,
                  "width":35,
                  "x":0,
                  "y":0
