@@ -5,6 +5,7 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 console.info('Script started successfully');
 
 let currentPopup: any = undefined;
+let counter = 0;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
@@ -56,7 +57,7 @@ WA.onInit().then(() => {
 		});
 
 		// 3. 監聽離開區域
-		WA.room.area.onLeave('roofZone').subscribe(() => {
+		WA.room.area.onLeave('attic').subscribe(() => {
 			// 隱藏圖層
             WA.room.hideLayer('furniture/furniture3');
 		});
