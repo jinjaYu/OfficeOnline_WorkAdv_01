@@ -91,6 +91,3 @@ jobs:
           FOLDER: dist/
           BASE_BRANCH: master
 
-      - name: Show npm logs
-        if: always()   # 即使前面步驟失敗也會執行
-        run: cat /home/runner/.npm/_logs/*.log || echo "No npm logs found"
